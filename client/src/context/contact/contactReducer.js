@@ -29,7 +29,7 @@ export default (state, action) => {
 			return {
 				...state,
 				contacts: state.contacts.map(contact =>
-					contact.id === action.payload._id ? action.payload : contact
+					contact._id === action.payload._id ? action.payload : contact
 				),
 				loading: false,
 			};
@@ -47,7 +47,7 @@ export default (state, action) => {
 				contacts: [],
 				filtered: null,
 				error: null,
-				current: null,	
+				current: null,
 			};
 		case SET_CURRENT:
 			return {
