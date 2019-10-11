@@ -47,7 +47,7 @@ export default (state, action) => {
 				contacts: [],
 				filtered: null,
 				error: null,
-				current: null,
+				current: null,	
 			};
 		case SET_CURRENT:
 			return {
